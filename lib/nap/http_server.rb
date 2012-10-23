@@ -1,10 +1,12 @@
-require 'sinatra'
+require 'sinatra/base'
 
-post "/register-queue" do
-    listen(params[:queue],params[:url])
-end
+class NapHTTPServer < Sinatra::Application
+    post "/register-queue" do
+        listen(params[:queue],params[:url])
+    end
 
-#TODO: to be implemented
-get "/registered-queue" do
-    #
+    #TODO: to be implemented
+    get "/registered-queue" do
+        #
+    end
 end

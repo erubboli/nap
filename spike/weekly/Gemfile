@@ -1,0 +1,8 @@
+source 'https://rubygems.org'
+
+gem 'rails', '3.2.3'
+gem 'nasreddin', path: '/Users/erubboli/elc/nasreddin'
+gem 'jruby-openssl'
+
+gem 'torquebox', '2.1.1'
+gem 'torquebox-rake-support'

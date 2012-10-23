@@ -1,3 +1,4 @@
+
 # Return the HTTP data format from a hash
 def queryize(params = {})
   params.map do |key, value|
@@ -11,11 +12,13 @@ end
 
 # Change the URL according to the REST schema
 def url_for(base_url,msg)
-
     if msg[:id]
-        base_url.end_with?('/') ? "#{base_url}#{msg[:id]}" : "#{base_url}/#{msg[:id]}"
+        if base_url.end_with?('/')
+            "#{base_url}#{msg[:id]}.json"
+        else
+            "#{base_url}/#{msg[:id]}.json"
+        end
     else
         base_url
     end
-
 end

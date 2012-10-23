@@ -1,2 +1,4 @@
-rvm use jruby-1.7.0.preview1@nap --create
-
+rvm use jruby-1.7.0.RC2@nap --create
+export TORQUEBOX_HOME=/Users/erubboli/.rvm/gems/jruby-1.7.0.RC2@nap/gems/torquebox-server-2.1.2-java
+export JBOSS_HOME=/Users/erubboli/.rvm/gems/jruby-1.7.0.RC2@nap/gems/torquebox-server-2.1.2-java/jboss
+export JRUBY_HOME=/Users/erubboli/.rvm/rubies/jruby-1.7.0.RC2
